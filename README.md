@@ -263,6 +263,8 @@ openclaw agents add agent-name --workspace ./agents/agent-name
 
 ## Related Projects
 
+- [🦀 CrewClaw](https://crewclaw.com) - Orchestrate your AI agents as a team. Connect agents from any framework, coordinate with @mentions, manage from dashboard or Telegram
+
 - [OpenClaw](https://github.com/anthropics/claude-code) - Official OpenClaw repository
 - [Clawdbot](https://github.com/xxx/clawdbot) - Advanced coordinator agent
 - [MoltBot](https://github.com/xxx/moltbot) - Content transformation agent
