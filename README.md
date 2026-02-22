@@ -257,6 +257,26 @@ openclaw agents add agent-name --workspace ./agents/agent-name
 
 ---
 
+## Support This Project
+
+I maintain this repo, write new templates, and keep everything up to date as a solo developer.
+
+If this saved you hours of writing SOUL.md files from scratch, consider supporting the work:
+
+<a href="https://github.com/sponsors/mergisi">
+  <img src="https://img.shields.io/badge/Sponsor-%E2%9D%A4-ea4aaa?style=for-the-badge&logo=github-sponsors&logoColor=white" alt="Sponsor" />
+</a>
+
+**What your sponsorship funds:**
+- New agent templates every month (25 and counting)
+- MCP server integrations and testing
+- Guides, tutorials, and documentation
+- Keeping everything compatible with the latest OpenClaw releases
+
+Even $1/mo helps. Every sponsor gets a shoutout in this README.
+
+---
+
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=mergisi/awesome-openclaw-agents&type=Date)](https://star-history.com/#mergisi/awesome-openclaw-agents&Date)
