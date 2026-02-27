@@ -27,7 +27,7 @@
 **Build your AI team in 15 minutes.** 6 production-ready agents, SOUL.md files, Telegram bots, Docker configs, and a step-by-step setup guide.
 
 <a href="https://mustafae.gumroad.com/l/oeyqxe">
-  <img src="https://img.shields.io/badge/Get_the_Kit-$9-orange?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPjxwYXRoIGQ9Ik0yMSAxNVY1YTIgMiAwIDAwLTItMkg1YTIgMiAwIDAwLTIgMnYxMGEyIDIgMCAwMDIgMmgxNGEyIDIgMCAwMDItMnptLTktMWwtNS0zaDEwbC01IDN6Ii8+PC9zdmc+" alt="Get the Kit" />
+  <img src="https://img.shields.io/badge/Get_the_Kit-orange?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPjxwYXRoIGQ9Ik0yMSAxNVY1YTIgMiAwIDAwLTItMkg1YTIgMiAwIDAwLTIgMnYxMGEyIDIgMCAwMDIgMmgxNGEyIDIgMCAwMDItMnptLTktMWwtNS0zaDEwbC01IDN6Ii8+PC9zdmc+" alt="Get the Kit" />
 </a>
 
 What's inside: PM, Writer, SEO, Analyst, DevOps, Outreach agents + Docker + Telegram bot + deployment guide.
@@ -224,7 +224,7 @@ npm install && node bot.js    # your agent is live on Telegram
 
 See the full [Quickstart Guide](quickstart/) with Docker support.
 
-Or skip setup entirely: [Deploy with CrewClaw](https://crewclaw.com/create-agent) ($9, includes Dockerfile + docker-compose + bot + README).
+Or skip setup entirely: [Deploy with CrewClaw](https://crewclaw.com/create-agent) (includes Dockerfile + docker-compose + bot + README).
 
 ---
 
@@ -266,7 +266,7 @@ Your CrewClaw package includes:
 └── README.md                     # Setup instructions
 ```
 
-**Single agent: $9** | **Team of 3 agents: $19** | **Free: Copy SOUL.md only**
+**Copy SOUL.md free** | **Full deploy package available on [CrewClaw](https://crewclaw.com/create-agent)**
 
 [Create your agent →](https://crewclaw.com/create-agent)
 
