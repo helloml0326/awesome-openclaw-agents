@@ -42,3 +42,11 @@ openclaw start
 Pick a template, customize it, and get a full deploy package (SOUL.md + Dockerfile + bot scripts + setup guide) in 60 seconds. No terminal required.
 
 **[Get your deploy package →](https://crewclaw.com/create-agent?utm_source=github&utm_medium=agents_readme&utm_campaign=deploy)**
+
+---
+
+## Built your own agent?
+
+Submit it to the registry. Your agent gets listed here and on [crewclaw.com/agents](https://crewclaw.com/agents?utm_source=github&utm_medium=agents_readme&utm_campaign=submit).
+
+**[Submit via PR →](../CONTRIBUTING.md)** · **[Submit via Issue →](https://github.com/mergisi/awesome-openclaw-agents/issues/new?template=agent-submission.md)**
