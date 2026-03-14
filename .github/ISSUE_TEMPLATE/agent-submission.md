@@ -17,8 +17,29 @@ assignees: mergisi
 <!-- One sentence: what does your agent do? -->
 
 
-## SOUL.md
-<!-- Paste your SOUL.md content below or link to your repo -->
+## SOUL.md (required)
+<!-- Paste your SOUL.md content below -->
+
+```markdown
+
+```
+
+## AGENTS.md (optional)
+<!-- Operating rules and instructions -->
+
+```markdown
+
+```
+
+## HEARTBEAT.md (optional)
+<!-- Wake-up checklist: what should the agent check periodically? -->
+
+```markdown
+
+```
+
+## WORKING.md (optional)
+<!-- Starting task template -->
 
 ```markdown
 

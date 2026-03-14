@@ -4,6 +4,23 @@ We welcome community agents! Submit yours and get it listed on [crewclaw.com/age
 
 ---
 
+## Agent File System
+
+Each agent is more than a prompt. It's a full operating system.
+
+```
+agents/[category]/[agent-name]/
+├── SOUL.md          ← Identity & personality (required)
+├── README.md        ← Description & use cases (required)
+├── AGENTS.md        ← Operating rules & instructions (optional)
+├── HEARTBEAT.md     ← Wake-up checklist (optional)
+└── WORKING.md       ← Starting task template (optional)
+```
+
+**SOUL.md** and **README.md** are required. The rest are optional but make your agent production-ready.
+
+---
+
 ## Submit Your Agent
 
 ### Option 1: Pull Request (recommended)
@@ -17,14 +34,15 @@ cd awesome-openclaw-agents
 
 **Step 2:** Create your agent folder
 
-```
-agents/[category]/[agent-name]/SOUL.md
-agents/[category]/[agent-name]/README.md
+```bash
+mkdir -p agents/[category]/[agent-name]
 ```
 
 Categories: `business`, `creative`, `data`, `development`, `devops`, `ecommerce`, `education`, `finance`, `freelance`, `healthcare`, `hr`, `legal`, `marketing`, `personal`, `productivity`, `real-estate`, `saas`, `security`
 
-**Step 3:** Write your SOUL.md
+**Step 3:** Write your SOUL.md (required)
+
+Who is this agent? What's their personality?
 
 ```markdown
 # Agent Name
@@ -57,7 +75,7 @@ Brief description of the agent.
 **Agent:** Example response
 ```
 
-**Step 4:** Add a README.md for your agent
+**Step 4:** Write your README.md (required)
 
 ```markdown
 # Agent Name
@@ -74,12 +92,91 @@ What this agent does and why it's useful.
 |---------|--------|
 | Example 1 | Result 1 |
 
+## Files
+
+| File | Purpose |
+|------|---------|
+| SOUL.md | Agent identity and personality |
+| AGENTS.md | Operating rules |
+| HEARTBEAT.md | Wake-up checklist |
+| WORKING.md | Starting task |
+
 ## Author
 
 Created by [@your-username](https://github.com/your-username)
 ```
 
-**Step 5:** Add entry to `agents.json`
+**Step 5:** Add AGENTS.md (optional)
+
+How should the agent operate? What are the rules?
+
+```markdown
+# AGENTS.md — Operating Rules
+
+## Workspace
+- Read/write files in your workspace directory
+- Store findings in memory/ folder
+- Log daily activity in memory/YYYY-MM-DD.md
+
+## Communication
+- Post updates to task threads
+- Use @mentions to notify other agents
+- Keep messages concise and actionable
+
+## Tools
+- File system: read, write, search
+- Shell: run scripts, check logs
+- Web: browse, research, fetch data
+
+## Rules
+- Always check WORKING.md on startup
+- Update WORKING.md after completing a task
+- Never make decisions outside your domain
+- Ask for clarification instead of guessing
+```
+
+**Step 6:** Add HEARTBEAT.md (optional)
+
+What should the agent check every time it wakes up?
+
+```markdown
+# HEARTBEAT.md — Wake-Up Checklist
+
+## On Wake
+- [ ] Read WORKING.md for current task
+- [ ] Check for @mentions and notifications
+- [ ] Review assigned tasks
+
+## Periodic
+- [ ] Scan activity feed for relevant updates
+- [ ] Check if blocked tasks can be unblocked
+- [ ] Update daily notes in memory/
+
+## Stand Down
+- If no tasks and no mentions, reply HEARTBEAT_OK
+```
+
+**Step 7:** Add WORKING.md (optional)
+
+What's the agent's starting state?
+
+```markdown
+# WORKING.md — Current State
+
+## Current Task
+No active task. Waiting for assignment.
+
+## Context
+- Agent deployed and ready
+- All integrations connected
+
+## Next Steps
+1. Check task board for new assignments
+2. Review any pending @mentions
+3. Begin work on highest priority item
+```
+
+**Step 8:** Add entry to `agents.json`
 
 ```json
 {
@@ -92,7 +189,7 @@ Created by [@your-username](https://github.com/your-username)
 }
 ```
 
-**Step 6:** Submit PR
+**Step 9:** Submit PR
 
 ```bash
 git add .
@@ -115,13 +212,15 @@ Don't want to set up a PR? Use the **[Submit Your Agent](https://github.com/merg
 
 ---
 
-## Other Contributions
+## Submission Tiers
 
-### Improve Documentation
-Fix typos, clarify instructions, add examples.
+| Tier | Files | Badge |
+|------|-------|-------|
+| Basic | SOUL.md + README.md | Community Agent |
+| Standard | + AGENTS.md | Production Agent |
+| Full | + HEARTBEAT.md + WORKING.md | Full Agent OS |
 
-### Report Issues
-Found a broken link or outdated info? [Open an issue](https://github.com/mergisi/awesome-openclaw-agents/issues/new?template=bug-report.md).
+Full submissions get highlighted in the registry.
 
 ---
 
@@ -129,6 +228,8 @@ Found a broken link or outdated info? [Open an issue](https://github.com/mergisi
 
 - **Agent names:** Descriptive. `CodeReviewer` not `CR`
 - **SOUL.md:** Clear headers, example interactions, specific behavioral guidelines
+- **AGENTS.md:** Concrete rules, not vague suggestions
+- **HEARTBEAT.md:** Actionable checklist, not prose
 - **README:** Start with name + one-liner, include use case table, credit author
 
 ---
@@ -140,6 +241,7 @@ Found a broken link or outdated info? [Open an issue](https://github.com/mergisi
 - [ ] Entry added to `agents.json`
 - [ ] Agent tested (works with OpenClaw or similar framework)
 - [ ] No broken links
+- [ ] (Optional) AGENTS.md, HEARTBEAT.md, WORKING.md included
 
 ---
 

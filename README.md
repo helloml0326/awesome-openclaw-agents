@@ -487,16 +487,27 @@ Learn how to build and deploy agents.
 
 Built a custom agent? Get it listed here and on [crewclaw.com/agents](https://crewclaw.com/agents?utm_source=github&utm_medium=readme&utm_campaign=submit).
 
+Each agent is a full operating system, not just a prompt:
+
+```
+agents/[category]/[your-agent]/
+├── SOUL.md          ← Identity & personality (required)
+├── README.md        ← Description & use cases (required)
+├── AGENTS.md        ← Operating rules (optional)
+├── HEARTBEAT.md     ← Wake-up checklist (optional)
+└── WORKING.md       ← Starting task (optional)
+```
+
 **Via PR (recommended):**
 
 1. Fork this repo
-2. Add `agents/[category]/[your-agent]/SOUL.md` + `README.md`
+2. Add your agent folder with SOUL.md + README.md (minimum)
 3. Add entry to `agents.json`
 4. Open a Pull Request
 
 **Via Issue (no setup):**
 
-[Submit Your Agent →](https://github.com/mergisi/awesome-openclaw-agents/issues/new?template=agent-submission.md) — paste your SOUL.md, we'll add it.
+[Submit Your Agent →](https://github.com/mergisi/awesome-openclaw-agents/issues/new?template=agent-submission.md) — paste your files, we'll add it.
 
 Full guide: [CONTRIBUTING.md](CONTRIBUTING.md)
 
